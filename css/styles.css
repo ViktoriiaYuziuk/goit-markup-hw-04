@@ -179,13 +179,6 @@ body {
     fill: currentColor;
 }
 
-/* .envelope-icon:hover,
-.envelope-icon:focus,
-.smartphone-icon:hover,
-.smartphone-icon:focus {
-    fill: currentColor;
-} */
-
 
 /* Герой -----------------------------------------------------------------------------------------------------------------------*/
 
@@ -197,7 +190,7 @@ body {
     margin: 0 auto;
 
     background-color: var(--secondary-bcg-color);
-    background-image: url(../images/bcgimage.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcgimage.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
