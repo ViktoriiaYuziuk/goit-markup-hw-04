@@ -9,6 +9,7 @@
     --footer-link-color: rgba(255, 255, 255, 0.6);
     --stroke-color: #ECECEC;
     --cards-stroke-color: #EEEEEE;
+    --icon-link-color: #AFB1B8;
     
 }
 
@@ -23,6 +24,8 @@
 }
 
 body {
+    max-width: 1600px;
+    
     background-color: var(--white-color);
     color: var(--primary-text-color);
 
@@ -168,11 +171,17 @@ body {
 /* Герой -----------------------------------------------------------------------------------------------------------------------*/
 
 .hero-section {
+    max-width: 1600px;
+    min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
 
     background-color: var(--secondary-bcg-color);
+    background-image: url(../images/bcgimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     text-align: center;
 }
@@ -237,11 +246,24 @@ body {
 }
 
 .features-list .item {
+    
     width: 270px;
 }
 
 .features-list .item:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-list .item::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--portfolio-btn-bcg-color);
+
 }
 
 .features-list .title {
@@ -346,11 +368,89 @@ body {
 .team-list .position {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.19;
     
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.social-links .list-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-links .list-item:hover,
+.social-links .list-item:focus {
+    background-color: var(--accent-color);
+}
+
+.social-links .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    fill: var(--icon-link-color);
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+    fill: var(--white-color);
+}
+
+/* Постійні клієнти------------------------------------------------------------------------------------------------------------ */
+
+.clients-section {
+    padding: 94px 215px;
+}
+
+
+.clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.clients-link {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+    fill: var(--icon-link-color);
+
+    border: 1px solid var(--icon-link-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /* Підвал -----------------------------------------------------------------------------------------------------------------------*/
@@ -435,6 +535,7 @@ body {
     font-size: 16px;
     line-height: 1.62;
     
+    border: transparent;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -447,6 +548,7 @@ body {
 .filters .button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Проєкти ------------------------------------------ */
@@ -475,6 +577,11 @@ body {
     
     width: 33.3333%;
     line-height: 1.88;
+}
+
+.project-list .card:hover,
+.project-list .card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
