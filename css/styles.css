@@ -157,6 +157,7 @@ body {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    
 
     color: var(--secondary-text-color);
 
@@ -175,15 +176,15 @@ body {
 .smartphone-icon {
     margin-right: 10px;
 
-    fill: var(--secondary-text-color);
+    fill: currentColor;
 }
 
-.envelope-icon:hover,
+/* .envelope-icon:hover,
 .envelope-icon:focus,
 .smartphone-icon:hover,
 .smartphone-icon:focus {
-    fill: var(--accent-color);
-}
+    fill: currentColor;
+} */
 
 
 /* Герой -----------------------------------------------------------------------------------------------------------------------*/
